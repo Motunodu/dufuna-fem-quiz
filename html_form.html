@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title> Sign up Form</title>
+        <style>
+            input {
+               width:100%;
+               border: 2px solid red;
+               border-radius: 10px;
+               background-color: rgb(236, 190, 236); 
+            }
+            input[type=radio] {
+                width:50px;
+                border-radius:0px solid red ;
+                background-color: rgb(236, 190, 236);
+        
+            }
+            select{
+                border:  solid red;
+                background-color: rgb(236, 190, 236); 
+            }
+           input[placeholder] {
+                padding-left: 5px;
+            }
+            input[type=submit]{
+               width:20%; 
+              
+            }
+
+        </style>
+       
+    </head>
+    <body>
+            <div class="container-fluid">
+             <form role="form" method="POST" action="Formprocess.php">>
+            <div style= "text-align: left; width:25% ; padding-left: 20px">
+            <fieldset>
+                <legend style="font-weight: bold ; font-color:solid red"> Sign up Form</legend>
+            <label for="firstname"> Firstname:</label><br/>
+            <input type="text" name="firstname" id="firstname" placeholder="First name"/>
+            <br/> <br/>
+            <label for="lastname"> Lastname</label><br/>
+            <input type="text" name="lastname" id="lastname" placeholder="Last name"/>
+            <br/><br/>
+            <label for="email">E-mail</label><br/>
+            <input type="text" name="email" id="email" placeholder="E-mail address"/>
+            <br/><br/>
+            <label for="password"> Password:</label><br/>
+            <input type="password" name="password" id="password" placeholder="Password"/>
+            <br/><br/>
+            <label for="password"> Confirm Password:</label> <br/>
+            <input type="password" name="password" id="password" placeholder="Confirm password"/>
+            <br/><br/>
+            <label for="phone number"> Phone number:</label> <br/>
+            <input type="text" name="phonenumber" id="phonenumber"  placeholder="Phone number"/>
+            <br/><br/>
+           Gender: 
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female"> Female</label>
+        
+            <input type="radio" name="gender" id="male">
+            <label for="male">Male</label>
+            <br/><br/>
+            <label for ="country"> Country:</label>
+                    <select name="country" id="country" size="5" multiple >
+                        <option value="nigeria"> Nigeria</option>
+                        <option value="ghana" selected> Ghana</option>
+                        <option value="kenya"> Kenya</option>
+                    </select>
+                    <br/><br/>
+                    <input type="submit" name="Submit" value="submit"/>
+    
+                </fieldset>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
